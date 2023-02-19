@@ -9,7 +9,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		environment := os.Getenv("Environment")
-		w.Write([]byte("hello devops v29: " + environment))
+		w.Write([]byte("hello devops v30: " + environment))
 	})
 	log.Print("Server started, Listening on port 10000...")
 	err := http.ListenAndServe(":10000", nil)
